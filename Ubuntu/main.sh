@@ -9,4 +9,6 @@ sudo chmod 600 ~/.ssh/authorized_keys
 sudo chmod 700 ~/.ssh
 sudo chown -R "$USERNAME" ~/.ssh
 
+ssh-keygen -A
+
 /usr/sbin/sshd
