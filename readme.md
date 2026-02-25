@@ -1,5 +1,5 @@
-Clone this repo and run `main.sh` depending which OS you need to configure
+Clone this repo and run `main.sh`
 
-In ./\<Your OS>/keys there is a public key for set up `ssh` connection. Of course NEED replace it your
+In ./keys there are public key and private key for set up `ssh` connection. Of course you NEED replace it your
 
 passphrase: `18769234`
