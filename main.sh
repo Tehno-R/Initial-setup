@@ -33,9 +33,10 @@ fi
 
 cp "$SCRIPT_DIR/keys/key.pub" ~/.ssh/authorized_keys
 sudo chown -R "$USERNAME":"$USERNAME" ~/.ssh
-sudo chmod 700 ~/.ssh
-sudo chmod 600 ~/.ssh/authorized_keys
+sudo chmod 600 ~/.ssh
+sudo chmod 400 ~/.ssh/authorized_keys
 
 sudo ssh-keygen -A
 
+sudo systemctl start ssh
 sudo /usr/sbin/sshd
