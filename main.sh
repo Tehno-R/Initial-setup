@@ -1,3 +1,5 @@
+#!/bin/bash
+
 SCRIPT_DIR=$(dirname "$0")
 USERNAME=$(whoami)
 HOSTINFO=$(cat /etc/os-release)
