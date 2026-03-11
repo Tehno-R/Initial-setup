@@ -3,6 +3,7 @@
 SCRIPT_DIR=$(dirname "$0")
 USERNAME=$(whoami)
 HOSTINFO=$(cat /etc/os-release)
+ETC_DIR="/etc/ssh/"
 
 HOST_ARCH="Arch Linux"
 HOST_UBUNTU="Ubuntu"
@@ -35,6 +36,8 @@ cp "$SCRIPT_DIR/keys/key.pub" ~/.ssh/authorized_keys
 sudo chown -R "$USERNAME":"$USERNAME" ~/.ssh
 sudo chmod 600 ~/.ssh
 sudo chmod 400 ~/.ssh/authorized_keys
+
+sudo cp -f "$SCRIPT_DIR/sshd_config" "$ETC_DIR"
 
 sudo ssh-keygen -A
 
